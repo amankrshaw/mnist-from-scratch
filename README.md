@@ -1,4 +1,4 @@
-# mnist-from-scratch
+
 # Handwritten Digit Recognition (MNIST) – **Built from Scratch using NumPy**
 
 ## Overview  
@@ -29,33 +29,38 @@ After downloading:
 
 ---
 
-## ⚙ Installation & Setup  
+##  Installation & Setup  
 
 Clone the repository:  
 ```bash
 git clone https://github.com/amankrshaw/mnist-from-scratch.git
 cd mnist-from-scratch
 
-Create a virtual environment and activate it:
+## Create a virtual environment and activate it:
+```bash
 python -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate     # For Windows
 
-Install dependencies:
+## Install dependencies:
+```bash
 pip install -r requirements.txt
 
-▶ Train the Model
+## Train the Model
 Run the training script:
-    python train.py
-This will:
+```bash
+python train.py
+
+### This will:
 Load the MNIST dataset
 Train the neural network from scratch
 Save the trained model to model.pkl
-Expected Accuracy:
+### Expected Accuracy:
 ✅ ~97% on MNIST test set after training for multiple epochs
 
-Run the Streamlit App
+## Run the Streamlit App
 Launch the app to draw digits and predict:
+```bash
 streamlit run app.py
 
 
