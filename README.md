@@ -1,66 +1,83 @@
-
 # Handwritten Digit Recognition (MNIST) – **Built from Scratch using NumPy**
 
-## Overview  
+## Overview
 This project implements a **neural network from scratch using only NumPy** to recognize handwritten digits from the MNIST dataset.  
-No TensorFlow, no PyTorch – everything coded manually to understand the core math behind deep learning.  
+No TensorFlow, no PyTorch – everything is coded manually to understand the core math behind deep learning.
 
-It also includes an **interactive Streamlit app** where you can **draw a digit** and get real-time predictions from the model.  
-
----
-
-## Features  
-✔ Fully connected neural network built from scratch (forward pass, backpropagation, gradient descent)  
-✔ Trained on the **MNIST dataset**  
-✔ Deployed with **Streamlit** for a user-friendly interface  
-✔ Supports drawing and prediction in real time  
+It also includes an **interactive Streamlit app** where you can **draw a digit** and get real-time predictions from the model.
 
 ---
 
-## Dataset  
+## Features
+Fully connected neural network built from scratch (forward pass, backpropagation, gradient descent)  
+Trained on the **MNIST dataset**  
+Deployed with **Streamlit** for a user-friendly interface  
+Supports drawing and prediction in real time  
+
+---
+
+## Dataset
 The project uses the **MNIST dataset** (handwritten digits 0–9).  
-Download it from **Kaggle** as a compressed archive:  
+Download it from **Kaggle** as a compressed archive:
 
-🔗 [Download MNIST from Kaggle](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)  
+ [Download MNIST from Kaggle](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
 
-After downloading:  
+After downloading:
 - Extract the archive  
 - Place `mnist_train.csv` and `mnist_test.csv` in the `data/` folder of the project  
 
 ---
 
-##  Installation & Setup  
+##  Installation & Setup
 
-Clone the repository:  
+### Clone the repository:
 ```bash
 git clone https://github.com/amankrshaw/mnist-from-scratch.git
 cd mnist-from-scratch
+```
 
-## Create a virtual environment and activate it:
+###  Create a virtual environment and activate it:
 ```bash
 python -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate     # For Windows
+```
 
-## Install dependencies:
+###  Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+---
 
 ## Train the Model
 Run the training script:
 ```bash
 python train.py
+```
 
-### This will:
-Load the MNIST dataset
-Train the neural network from scratch
-Save the trained model to model.pkl
-### Expected Accuracy:
-✅ ~97% on MNIST test set after training for multiple epochs
+This will:
+- Load the MNIST dataset  
+- Train the neural network from scratch  
+- Save the trained model to `model.pkl`  
+
+**Expected Accuracy:**  
+ ~97% on MNIST test set after training for multiple epochs  
+
+---
 
 ## Run the Streamlit App
 Launch the app to draw digits and predict:
 ```bash
 streamlit run app.py
+```
 
+---
+
+## Tech Stack
+- **Python 3.x**  
+- **NumPy** (for all neural network operations)  
+- **Streamlit** (for UI)  
+
+---
 
